@@ -44,4 +44,13 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Add bootstrap:
 gem 'bootstrap-sass', '~> 3.3.5'
+
+gem 'simple_form'
+
+# Add pagination:
+gem 'will_paginate'
+
+# Integration of will_paginate with Bootstrap's pagination:
+gem 'will_paginate-bootstrap'
