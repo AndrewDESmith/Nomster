@@ -57,3 +57,6 @@ gem 'will_paginate'
 
 # Integration of will_paginate with Bootstrap's pagination:
 gem 'will_paginate-bootstrap'
+
+# User authentication:
+gem 'devise', '>= 3.2.4'
