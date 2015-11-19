@@ -60,3 +60,9 @@ gem 'will_paginate-bootstrap'
 
 # User authentication:
 gem 'devise', '>= 3.2.4'
+
+# Geocoding:
+gem 'geocoder'
+
+# Secure storage of Bing maps API key in an GEOCODER_API_KEY variable:
+gem 'figaro', '>= 1.0.0'
