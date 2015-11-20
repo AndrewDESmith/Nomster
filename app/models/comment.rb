@@ -11,10 +11,10 @@ class Comment < ActiveRecord::Base
     'five stars'  => '5_stars'
   }
 
-def humanized_rating
-  # In the place show page, <%= comment.rating %> would display the selected hash value (after using the drop down input) from the RATINGS chart, which is not great.  We'd rather display the keys, which can be altered at will, while the values in this hash are stored in the database and must be left alone to avoid later pain.
-  # Invert the keys and values of the RATINGS hash, then access the value within the inverted hash that corresponds to the current instance of Comment.rating:
-  RATINGS.invert[self.rating]
-end
+  def humanized_rating
+    # In the place show page, <%= comment.rating %> would display the selected hash value (after using the drop down input) from the RATINGS chart, which is not great.  We'd rather display the keys, which can be altered at will, while the values in this hash are stored in the database and must be left alone to avoid later pain.
+    # Invert the keys and values of the RATINGS hash, then access the value within the inverted hash that corresponds to the current instance of Comment.rating:
+    RATINGS.invert[self.rating]
+  end
 
 end

@@ -3,6 +3,19 @@
     <h1><%= link_to place.name, place_path(place) %></h1>
     <i><%= place.address %></i><br><br>
     <p><%= place.description %></p><br>
+    <br>
+
+    <% place.photos.each do |photo| %>
+    <div class="col-xs-10 col-sm-5 col-xs-offset-1">
+      <%= image_tag photo.picture, :class => 'img-responsive' %>
+      <div class="clear"></div>
+      <small><i><%= photo.caption %></i></small>
+      <div class="clear"></div>
+      <br>
+      <br>
+    </div>
+    <% end %>
+
     <% if place.user.present? %>
       <small><%= place.user.email %></small>
     <% end %>

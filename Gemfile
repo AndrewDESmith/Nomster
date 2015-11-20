@@ -66,3 +66,6 @@ gem 'geocoder'
 
 # Secure storage of Bing maps API key in an GEOCODER_API_KEY variable:
 gem 'figaro', '>= 1.0.0'
+
+# Image uploading:
+gem 'carrierwave'
