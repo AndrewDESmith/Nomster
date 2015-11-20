@@ -21,6 +21,7 @@
     </div>
   <% end %>
 
+<div class="img-responsive">
 <% if @place.latitude.present? && @place.longitude.present? %>
   <script>
     function initMap() {
@@ -43,6 +44,7 @@
 
   <div id="map"></div>
 <% end %>
+</div>
 
 <br>
 
