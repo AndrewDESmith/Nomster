@@ -6,7 +6,7 @@
     <br>
 
     <% place.photos.each do |photo| %>
-    <div class="col-xs-10 col-sm-5 col-xs-offset-1">
+    <div class="col-xs-12 col-sm-6">
       <%= image_tag photo.picture, :class => 'img-responsive' %>
       <div class="clear"></div>
       <small><i><%= photo.caption %></i></small>
