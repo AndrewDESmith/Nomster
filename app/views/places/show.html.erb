@@ -16,6 +16,7 @@
       <small><i><%= photo.caption %></i></small>
       <div class="clear"></div>
       <br>
+      <%= link_to 'Destroy', place_photo_path(@place, photo), :method => :delete, :data => { :confirm => 'Are you sure you want to delete this?' }, :class => 'btn btn-danger' %>
       <br>
     </div>
   <% end %>

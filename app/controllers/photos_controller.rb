@@ -1,10 +1,27 @@
 class PhotosController < ApplicationController
   before_action :authenticate_user!
 
+  def new
+    @photo = Photo.new
+  end
+
   def create
     @place = Place.find(params[:place_id])
-    @place.photos.create(photo_params)
-    redirect_to place_path(@place)
+    @photo = @place.photos.create(photo_params)
+    if @photo.valid?
+      flash[:success] = "Photo added."
+      redirect_to place_path(@place)
+    else
+      flash[:error] = "You need to include a photo and a caption."
+      redirect_to place_path(@place)
+    end
+  end
+
+  def destroy
+    @place = Place.find(params[:place_id])
+    @photo = @place.photos.find(params[:id])
+    @photo.destroy
+    redirect_to place_path
   end
 
   private

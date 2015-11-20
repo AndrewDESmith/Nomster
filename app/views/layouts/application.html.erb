@@ -44,6 +44,12 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+<div class="container">
+  <% flash.each do |key, value| %>
+    <div class="alert alert-warning alert-<%= key %>"><%= value %></div>
+  <% end %>
+</div>
+
 <% if notice.present? %>
   <p class="alert alert-info"><%= notice %></p>
 <% end %>
