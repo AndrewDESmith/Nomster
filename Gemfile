@@ -69,3 +69,6 @@ gem 'figaro', '>= 1.0.0'
 
 # Image uploading:
 gem 'carrierwave'
+
+# Amazon (AWS) S3:
+gem 'fog', '~> 1.3.1'
