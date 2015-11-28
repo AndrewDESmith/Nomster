@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url('/assets/debut_dark.png');
   border-radius: 0;
   box-shadow: 0px 1px 3px #1a1a1a;
+  margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-brand {
@@ -58,6 +59,7 @@ blockquote {
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
+
 blockquote:before {
   color: #ccc;
   content: open-quote;
@@ -66,6 +68,39 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+
 blockquote p {
   display: inline;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  max-height: 550px;
+}
+
+.carousel-caption {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto
+}
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+#carousel-caption1 {
+  max-width: 827px;
+}
+
+#carousel-caption2 {
+  max-width: 823.828px;
+}
+
+#carousel-caption3 {
+  max-width: 836.438px;
 }
