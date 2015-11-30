@@ -33,6 +33,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
+          <li><%= link_to 'My Profile', user_path(current_user) %></li>
           <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
         <% else %>
           <li><%= link_to 'Sign in', new_user_session_path %></li>
@@ -50,9 +51,6 @@
   <% end %>
 </div>
 
-<% if notice.present? %>
-  <p class="alert alert-info"><%= notice %></p>
-<% end %>
 <% if alert.present? %>
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
