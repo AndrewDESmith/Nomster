@@ -72,3 +72,6 @@ gem 'carrierwave'
 
 # Amazon (AWS) S3:
 gem 'fog', '~> 1.3.1'
+
+# Factory Girl (data templates for testing)
+gem 'factory_girl_rails', '~> 4.0'

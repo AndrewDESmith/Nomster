@@ -1,9 +1,9 @@
 require 'test_helper'
 
-class PhotosControllerTest < ActionController::TestCase
-  test "should get create" do
-    get :create
-    assert_response :success
-  end
+# class PhotosControllerTest < ActionController::TestCase
+#   test "should get create" do
+#     get :create
+#     assert_response :success
+#   end
 
-end
+# end
